@@ -1,18 +1,23 @@
-# mikrotik_app
 name: mikrotik_manager
-description: "A Flutter application to manage MikroTik router and print thermal vouchers."
+description: A new Flutter project for MikroTik management and printing.
 publish_to: 'none'
+
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.0.0 <4.0.0'
+  sdk: '>=3.19.0 <4.0.0'
 
 dependencies:
   flutter:
     sdk: flutter
-  routeros_api: ^1.0.4          # حزمة الاتصال بالميكروتك عبر الـ API
-  blue_thermal_printer: ^1.2.5  # حزمة الطابعة الحرارية عبر البلوتوث
-  permission_handler: ^11.0.0   # لصلاحيات البلوتوث والموقع
+  routeros_api: ^0.1.4
+  blue_thermal_printer: ^1.2.3
+  permission_handler: ^11.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
 
 flutter:
   uses-material-design: true
